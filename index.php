@@ -55,6 +55,8 @@
             
             if(error != "") {
                 $("#error").html('<div class="alert alert-danger" role="alert"><strong>There were error(s)</strong><br>' + error +'</div>');
+            } else {
+                $("form").unbind("submit").submit();
             }
             
         });
